@@ -8,6 +8,8 @@ var btnClick = document.getElementById('btn').addEventListener('click',function(
     if(counter < 1){
         counter = 0;
     }
+    setTimeout(function(){hpBar.style.backgroundColor = "green";},200);
     hpBar.style.width = counter + "%";
+    hpBar.style.backgroundColor = "red";
     console.log(counter + " Damage taken: " + RandomNumber);
 });
